@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Create orders table in MySQL",
+			"command": "mysql -u root -e \"USE hackathon_db; CREATE TABLE IF NOT EXISTS orders (id INT AUTO_INCREMENT PRIMARY KEY, table_number VARCHAR(10), details TEXT, waiter VARCHAR(100), chef VARCHAR(100), status VARCHAR(50), time DATETIME);\"",
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
